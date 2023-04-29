@@ -361,8 +361,6 @@ body{
     margin: 10px 100px 0px 25px;
 }
 
-
-
 .header_words{
     margin-top: 32px;
     margin-right: 100px;
@@ -385,8 +383,6 @@ p{margin: 0;}
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-
 .active_header__link:hover{
     color: #ffa000; /* Меняем цвет текста */
     -webkit-text-shadow: 2px 2px 2px #000;
@@ -400,15 +396,10 @@ p{margin: 0;}
     margin-right: 100px;
 }
 
-
 .trubka_pic{
     padding-top: 21px;
     padding-right: 17px;
 }
-
-
-
-
 
 .intro{
     background: url(../img/fon.png) no-repeat center; 
@@ -571,7 +562,6 @@ a.button1:active{
     }
 }
 
-
 .remont_photo2{
     margin-top: 35px;
 }
@@ -587,8 +577,6 @@ a.button1:active{
     margin-top: 32px;
 }
 
-
-
 .remont_photo3{
     margin-top: 35px;
 }
@@ -603,8 +591,6 @@ a.button1:active{
     text-decoration: none;
     margin-top: 32px;
 }
-
-
 
 .remont_photo4{
     margin-top: 33px;
@@ -636,8 +622,6 @@ a.button1:active{
     margin-top: 38px;
 }
 
-
-
 .remont_photo6{
     margin-top: 33px;
 }
@@ -652,8 +636,6 @@ a.button1:active{
     text-decoration: none;
     margin-top: 32px;
 }
-
-
 
 .remont_photo7{
     margin-top: 33px;
@@ -685,7 +667,6 @@ a.button1:active{
     margin-top: 32px;  
 }
 
-
 .remont_photo9{
     margin-top: 32px;
 }
@@ -700,7 +681,6 @@ a.button1:active{
     text-decoration: none;
     margin-top: 35px;
 }
-
 
 .ceny_block{
     background-color: #FFFFFF;
@@ -751,7 +731,6 @@ a.button1:active{
     background-color: #D2D2D2;
 }
 
-
 .text_about{
     font-family: 'Oswald';
     font-style: normal;
@@ -765,7 +744,6 @@ a.button1:active{
 .about_photo{
     margin-top: 81px;
 }
-
 
 .about_zagolovok{   
     font-family: 'Rubik';
@@ -789,7 +767,6 @@ a.button1:active{
     padding-bottom: 220px;
     background-color: #D2D2D2;
 }
-
 
 .contakt{
     background-color: #2F2F2F;
@@ -890,8 +867,6 @@ a.button1:active{
     margin-bottom: 15px;
 }
 
-
-
 .map1{
     margin-top: 33px;
     margin-bottom: 32px;
@@ -938,13 +913,7 @@ a.button1:active{
     text-align: center;
 }
 
-
 .classic_map2{
     width: 1800px;
     margin: auto;
 }
-
-
-
-
-
