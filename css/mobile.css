@@ -1,0 +1,210 @@
+@media only screen and (max-width:1200px) {
+    
+    .intro__title{
+        transform: translateX(-1%);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 53px;
+    }
+
+    .intro__subtitle{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        transform: translateX(-7%);
+    }
+
+    .intro__subtitle1{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        transform: translateX(-1%);
+    }
+
+    .button{
+        transform: translateX(-24%);
+    }
+
+    .text_uslugi{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+        transform: translateX(-20%);
+    }
+
+    .remont1{
+        display: block;
+    }
+
+    .podveska{
+        width:285px;
+        transform: translateX(-45%);
+    }
+
+    .dvigatel{
+        width:285px;
+        transform: translateX(-80%);
+    }
+
+    .tormoz{
+        width:285px;
+        transform: translateX(-120%);
+    }
+
+    .to{
+        width:285px;
+        transform: translateX(-45%);
+    }
+
+    .shina{
+        width:285px;
+        transform: translateX(-80%);
+    }
+
+    .complex{
+        width:285px;
+        transform: translateX(-120%);
+    }
+
+    .fara{
+        width:285px;
+        transform: translateX(-45%);
+    }
+
+    .svarch{
+        width:285px;
+        transform: translateX(-80%);
+    }
+
+    .grm{
+        width:285px;
+        transform: translateX(-120%);
+    }
+
+    .text_ceny{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+        transform: translateX(-23%);
+    }
+
+    .ceny_info_text{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        transform: translateX(-25%);
+    }
+
+    .ceny_subtitle_info{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        transform: translateX(-25%);
+    }
+
+    .ceny_photo1{
+        width: 450px;
+        transform: translateX(-62%);
+    }
+
+    .text_about{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+        transform: translateX(-25%);
+    }
+
+    .about_photo{
+        width: 1000px;
+        transform: translateX(-15%);
+    }
+
+    .about_zagolovok{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        transform: translateX(-8%);
+    }
+
+    .subtitle_zagolovok1{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        transform: translateX(-17%);
+        height: 43px;
+        width: 900px;
+    }
+
+    .subtitle_zagolovok2{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        transform: translateX(-17%);
+        height: 67px;
+        width: 900px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle_zagolovok3{
+        font-weight: 400;
+        font-size: 20px;
+        height: 43px;
+        line-height: 24px;
+        transform: translateX(-17%);
+        width: 900px;
+    }
+
+    .contakt_intro{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+        transform: translateX(-23%);
+    }
+
+    .squares{
+        display: block;
+    }
+
+    .square{
+        transform: translateX(75%);
+        margin-bottom: 47px;
+    }
+
+    .square1{
+        transform: translateX(70.3%);
+        margin-bottom: 47px;
+    }
+
+    .square2{
+        transform: translateX(75%);
+        padding-bottom: 47px;
+    }
+
+    .classic_map__text0{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+        transform: translateX(-25%);
+        margin-top: -100px;
+    }
+
+    .maps1{
+        width: 900px;
+        height: 400px;
+        transform: translateX(12%);
+        margin-bottom: 105px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+  
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+@media only screen and (max-width:320px) {
+  
+}

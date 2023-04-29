@@ -1,0 +1,950 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+ fieldset,form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* ПОЛЗУНОК */
+html::-webkit-scrollbar {
+width: 16px;
+height: 16px;
+}
+
+html::-webkit-scrollbar-thumb {
+background: #3f3f3f;
+}
+
+html::-webkit-scrollbar-track {
+background-color: #EAD835;
+}
+:focus {
+    outline: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: " ";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden] {
+    display: none;
+}
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+a:focus {
+    outline: thin dotted;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+figure {
+    margin: 0;
+}
+form {
+    margin: 0;
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ * and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ * and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ * `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ * Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+ htmlinput[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible; /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+ htmlinput[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ * Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0,2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body{
+    font-family: 'Oswald';
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000000;
+    min-width: 1900px;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.remontik{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 100px;
+}
+.square_block1{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 317px;
+    background: #FFFFFF;
+    border:7px solid black;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    height: 100px;
+    z-index: 1;
+}
+
+.header__wrapper{
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    vertical-align: center;
+    margin: 0 auto;
+}
+
+.panel-nav{
+    display: flex;
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header__logo-pic{
+    vertical-align: center;
+    margin: 10px 100px 0px 25px;
+}
+
+
+
+.header_words{
+    margin-top: 32px;
+    margin-right: 100px;
+}
+
+.header__item1{
+    padding-top: 15px;
+}
+p{margin: 0;}
+
+.active_header__link{
+    font-family: 'Oswald';
+    color: #FFC700;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.active_header__link:hover{
+    color: #ffa000; /* Меняем цвет текста */
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+  }
+
+
+.login_pic{
+    margin-top: 6px;
+    margin-right: 100px;
+}
+
+
+.trubka_pic{
+    padding-top: 21px;
+    padding-right: 17px;
+}
+
+
+
+
+
+.intro{
+    background: url(../img/fon.png) no-repeat center; 
+    background-size: cover;
+    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.intro__title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 95px;
+    margin-top: 150px;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+}
+
+.intro__subtitle{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+}
+
+
+.rectangle a:hover{
+    color: #000;
+}
+.rectangle a{
+    text-decoration: none;
+}
+a.button1:hover{ 
+    background: #fff;
+}
+
+a.button1:active{ 
+    background: white; 
+}
+.button1_text:hover{
+    color: #000;
+    background-color: rgba(255, 255, 255);
+    transition: 0.3s linear;
+}
+.button1_text{
+    transition: 0.3s linear;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color:#fff;
+    background-color: rgba(0, 0, 0);
+    width: 300px;
+    border-radius: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button{
+    margin: 192px auto 100px auto;
+    width: 300px;
+}
+
+.block_uslugi{
+    background-color: #2F2F2F;
+    display: grid;
+    margin: auto;
+}
+
+
+.text_uslugi{
+    color: #FFFFFF;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.remont_photo1{
+    margin-top: 35px;
+}
+
+.faf{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+.arrow {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 44px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+}
+
+.arrow div {
+    position: relative;
+    top: 30px;
+    width: 60px;
+    height: 10px;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: flex;
+}
+
+.arrow div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: -8px;
+    background-color: #337AB7;
+    transform: rotate(45deg);
+}
+
+.arrow div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: -8px;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+
+.arrow:hover {
+    animation: arrow 1s linear infinite;
+}
+
+@keyframes arrow {
+    0% {
+        left:0;
+    }
+    50% {
+        left:10px;
+    }
+    100% {
+        left:0;
+    }
+}
+
+
+.remont_photo2{
+    margin-top: 35px;
+}
+
+.dvig{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+
+
+.remont_photo3{
+    margin-top: 35px;
+}
+
+.tormoz1{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+
+
+.remont_photo4{
+    margin-top: 33px;
+}
+
+.canistra{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 37px;
+}
+
+.remont_photo5{
+    margin-top: 33px;
+}
+
+.wheel1{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 38px;
+}
+
+
+
+.remont_photo6{
+    margin-top: 33px;
+}
+
+.repair{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+
+
+.remont_photo7{
+    margin-top: 33px;
+}
+
+.car1{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px; 
+    color: #000000;
+    text-decoration: none;
+    margin-top: 32px;
+}
+
+.remont_photo8{
+    margin-top: 33px;
+}
+
+.welder{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;  
+    margin-top: 32px;  
+}
+
+
+.remont_photo9{
+    margin-top: 32px;
+}
+
+.podveska{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 35px;
+}
+
+
+.ceny_block{
+    background-color: #FFFFFF;
+}
+
+.text_ceny{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    margin-top: 65px;
+    text-align: center;
+}
+
+.ceny_intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+}
+
+.ceny_info_text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    width: 694px;
+    margin-top: 75px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.ceny_subtitle_info{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    width: 695px;
+    margin-bottom: 250px;
+    text-align: justify;
+}
+
+.ceny_photo1{
+    margin-top: 75px;
+}
+
+.about_block{
+    background-color: #D2D2D2;
+}
+
+
+.text_about{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.about_photo{
+    margin-top: 81px;
+}
+
+
+.about_zagolovok{   
+    font-family: 'Rubik';
+    font-style: bold;
+    font-size: 36px;
+    line-height: 43px;
+    padding-bottom: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+.subtitle_zagolovok1{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    padding-bottom: 30px;
+}
+
+.text_about_text3{
+    padding-bottom: 220px;
+    background-color: #D2D2D2;
+}
+
+
+.contakt{
+    background-color: #2F2F2F;
+    padding-bottom: 75px;
+}
+
+.contakt_intro{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.squares{
+    display: flex;
+    justify-content: space-between;
+}
+
+.square{
+    width: 317px;
+    height: 325px;
+    background: #FFFAFA;
+    border:10px solid black;
+    text-align: center;
+}
+
+.trubka2{
+    margin-top: 33px;
+}
+
+.call_intro{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 33px;
+}
+
+.call_subtitle{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.number1{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    direction: none;
+    padding-top: 21px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.number2{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    direction: none;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+.e-mail1{
+    margin-top: 33px;
+    margin-bottom: 32px;
+}
+
+.e-mail_intro{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.e-mail_subtitle{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+
+
+.map1{
+    margin-top: 33px;
+    margin-bottom: 32px;
+}
+
+.map_intro{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.map_subtitle{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.map2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.square_intro{
+    display: flex;
+    display: block;
+}
+
+.classic_map__text0{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+.classic_map2{
+    width: 1800px;
+    margin: auto;
+}
+
+
+
+
+
