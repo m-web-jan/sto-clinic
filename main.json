@@ -47,7 +47,7 @@
           "Замена реактивных тяг, комплект": "От 30 р",
           "Перепрессовка подшипника полуоси, 1 шт.": "От 40 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "to",
@@ -74,7 +74,7 @@
           "Замена сцепления": "От 100 р",
           "Замена ремня ГРМ": "От 80 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "far",
@@ -91,7 +91,7 @@
           "Фары ближнего света": "От 120 р",
           "Дополнительные противотуманные и дальние фары": "От 200 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "dvig",
@@ -113,7 +113,7 @@
           "Замена ГБЦ": "От 300 р",
           "Замена цепи ГРМ": "От 260 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "shinomontazh",
@@ -135,7 +135,7 @@
           "Монтаж/демонтаж шин с джипа/буса": "От 7 р",
           "Балансировка стального диска": "От 4 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "svar",
@@ -159,7 +159,7 @@
           "Крыша": "От 200 р",
           "Крышка багажника": "От 170 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "tormoz",
@@ -186,7 +186,7 @@
           "Регулировка троса ручного тормоза": "От 15 р",
           "Замена главного тормозного цилиндра": "От 40 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     },
     {
       "page_name": "comrem",
@@ -204,7 +204,7 @@
         "Полировка (при необходимости);": "От 200 р",
         "Последующая сборка.": "От 1000 р"
       },
-      "table__img": "/img/podveska_2.jpg"
+      "table__img": "./img/podveska_2.jpg"
     },
     {
         "page_name": "grm",
@@ -221,6 +221,6 @@
           "Замена переднего сальника (коленвала)": "От 50 р",
           "Замена помпы": "От 35 р"
         },
-        "table__img": "/img/podveska_2.jpg"
+        "table__img": "./img/podveska_2.jpg"
     }
 ]
