@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="icon" href="img/vkladka_icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2? &display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -34,68 +32,56 @@
 </head>
 <body>
 
+  <header class="header">
+    <div class="header__wrapper">
+      <nav>
+        <div class="panel-nav">        
+          <div class="header__logo">
+            <a href="#top"><img src="./img/logo 1.png" alt="AUTOCLINIC" class="header__logo-pic"></a>
+          </div>
+          <div class="header_burger">
+            <span></span>
+          </div>
 
-    <header class="header">
-        
-            <div class="header__wrapper">
-                <nav class="navbar navbar-expand-lg vidy__works">
-                    <div class="panel-nav">
-                
-                <div class="header__logo">
-                    <a href="#!" class="header__logo-link ">
-                        <a href="#top"><img src="./img/logo 1.png" alt="AUTOCLINIC" class="header__logo-pic"></a>
-                    </a>
-                </div>
-                        <div class="header_burger">
-                          <span></span>
-                        </div>
+          <div id="navbarNav">
+            <ul class="navbar-nav">
+              <li>
+                <a class="active_header__link" aria-current="page" href="#top"><p class="header_words">Главная</p></a>
+              </li>
+              <li>
+                <a class="active_header__link" href="#2"><p class="header_words">Наши услуги</p></a>
+              </li>
+              <li>
+                <a class="active_header__link" aria-current="page" href="#3"><p class="header_words">Цены</p></a>
+              </li>
+              <li>
+                <a class="active_header__link" aria-current="page" href="#4"><p class="header_words">О нас</p></a>
+              </li>
+              <li>
+                <a class="active_header__link" aria-current="page" href="#5"><p class="header_words">Контакты</p></a>
+              </li>
+              <li>
+                <a class="active_header__link" aria-current="page" href="#6"><p class="header_words">Геопозиция</p></a>
+              </li>
 
-                          <div class="collapse navbar-collapse" id="navbarNav" class="navbarNav1">
-                            <ul class="navbar-nav">
-                              <li class="nav-item header__item">
-                                <a class="active_header__link" aria-current="page" href="#top"><p class="header_words">Главная</p></a>
-                              </li>
-                              <li class="nav-item header__item">
-                                <a class="active_header__link" href="#2"><p class="header_words">Наши услуги</p></a>
-                              </li>
-                              <li class="nav-item header__item">
-                                <a class="active_header__link" aria-current="page" href="#3"><p class="header_words">Цены</p></a>
-                              </li>
-                              <li class="nav-item header__item">
-                                <a class="active_header__link" aria-current="page" href="#4"><p class="header_words">О нас</p></a>
-                              </li>
-                              <li class="nav-item header__item">
-                                <a class="active_header__link" aria-current="page" href="#5"><p class="header_words">Контакты</p></a>
-                              </li>
-                              <li class="nav-item header__item">
-                                <a class="active_header__link" aria-current="page" href="#6"><p class="header_words">Геопозиция</p></a>
-                              </li>
+              <div class="login">
+                <a class = "active_header__linklogo" href = "./АвторизацияРегистрация/АвторизацияРегистрация.sln"><img src="./img/login.png" alt="AUTOCLINIC" class="login_pic"></a>
+              </div>
 
-                              <div class="login">
-                                <a class = "active_header__linklogo" href = "./АвторизацияРегистрация/АвторизацияРегистрация.sln"><img src="./img/login.png" alt="AUTOCLINIC" class="login_pic"></a>
-                              </div>
+              <div class="trubka_block">
+                <img src="./img/трубка.png" alt="AUTOCLINIC" class="trubka_pic">
+              </div>
 
-                              <div class="trubka_block">
-                                <img src="./img/трубка.png" alt="AUTOCLINIC" class="trubka_pic">
-                              </div>
-
-                              <li class="nav-item header__item1">
-                                <a class="active_header__link" href="tel:+375298417665"><p class="active_header__link_6">+375 (29) 841-76-65</p></a>
-                                <a class="active_header__link" href="tel:+375177891222"><p class="active_header__link_7">+375 (17) 789-12-22</p></a>
-                              </li>
-                              
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-                    
-                   
-
-
-                </div>
-            
-        </header>
-
+              <li class="header__item1">
+                <a class="active_header__link" href="tel:+375298417665"><p class="active_header__link_6">+375 (29) 841-76-65</p></a>
+                <a class="active_header__link" href="tel:+375177891222"><p class="active_header__link_7">+375 (17) 789-12-22</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>  
+  </header>
 
     <main id="top" class="main">
         <section class="intro">
@@ -142,25 +128,25 @@
               <div class="square_block1">
                 <img src="./img/faf.png" alt="AUTOCLINIC" class="remont_photo1">
                 <p class="faf">РЕМОНТ ПОДВЕСКИ</p>
-                <div class="arrow">
-                  <a class="silka1" href="./podveska.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=podveska"><div class="arrow" id="podveska">
+                  <div></div>
+                </div></a>
               </div>
 
               <div class="square_block1">
                 <img src="./img/dvig.png" alt="AUTOCLINIC" class="remont_photo2">
                 <p class="dvig">РЕМОНТ ДВИГАТЕЛЯ</p>
-                <div class="arrow">
-                  <a class="silka2" href="./dvig.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=dvig"><div class="arrow" id="dvig">
+                  <div></div>
+                </div></a>
               </div>
 
               <div class="square_block1">
                 <img src="./img/tormoz1.png" alt="AUTOCLINIC" class="remont_photo3">
                 <p class="tormoz1">РЕМОНТ ТОРМОЗНОЙ СИСТЕМЫ</p>
-                <div class="arrow">
-                  <a class="silka3" href="./tormoz.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=tormoz"><div class="arrow" id="">
+                  <div></div>
+                </div></a>
               </div>
 
             </div>
@@ -170,25 +156,25 @@
               <div class="square_block1">
                 <img src="./img/canistra.png" alt="AUTOCLINIC" class="remont_photo4">
                 <p class="canistra">ВСЕ ВИДЫ ТО</p>
-                <div class="arrow">
-                  <a class="silka4" href="./to.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=to"><div class="arrow">
+                  <div></div>
+                </div></a>
               </div>
 
               <div class="square_block1">
                 <img src="./img/wheel1.png" alt="AUTOCLINIC" class="remont_photo5">
                 <p class="wheel1">ШИНОМОНТАЖ</p>
-                <div class="arrow">
-                  <a class="silka5" href="./shinomontazh.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=shinomontazh"><div class="arrow">
+                  <div></div>
+                </div></a>
               </div>
 
               <div class="square_block1">
                 <img src="./img/repair.png" alt="AUTOCLINIC" class="remont_photo6">
                 <p class="repair">КОМПЛЕКСНЫЙ РЕМОНТ</p>
-                <div class="arrow">
-                  <a class="silka6" href="./comrem.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=comrem"><div class="arrow">
+                  <div></div>
+                </div></a>
               </div>
 
             </div>
@@ -198,25 +184,25 @@
               <div class="square_block1">
                 <img src="./img/car1.png" alt="AUTOCLINIC" class="remont_photo7">
                 <p class="car1">РЕГУЛИРОВКА ФАР</p>
-                <div class="arrow">
-                  <a class="silka7" href="./far.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=far"><div class="arrow">
+                  <div></div>
+                </div></a>
               </div>
 
               <div class="square_block1">
                 <img src="./img/welder.png" alt="AUTOCLINIC" class="remont_photo8">
                 <p class="welder">СВАРОЧНЫЕ РАБОТЫ</p>
-                <div class="arrow">
-                  <a class="silka8" href="./svar.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=svar"><div class="arrow">
+                  <div></div>
+                </div></a>
               </div>
 
               <div class="square_block1">
                 <img src="./img/podveska.png" alt="AUTOCLINIC" class="remont_photo9">
                 <p class="podveska">ЗАМЕНА РЕМНЕЙ ГРМ</p>
-                <div class="arrow">
-                  <a class="silka9" href="./grm.html"><div></div></a>
-                </div>
+                <a href="service_page.html?page=grm"><div class="arrow">
+                  <div></div>
+                </div></a>
               </div>
             </div>
           </div>
@@ -340,6 +326,6 @@
         </div>
           <div class="classic_map2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39224.38558629383!2d23.68438321877947!3d52.08839263655044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210fcf4be817d3%3A0xf0300411e0b2b10c!2z0LzQsNCz0LDQt9C40L0g0JTRj9C00Y8g0KTQtdC00L7RgA!5e0!3m2!1sru!2sby!4v1663010013392!5m2!1sru!2sby" width="1800" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps1"></iframe>
-          </div>
+          </div>        
   </body>
 </html>

@@ -397,7 +397,8 @@ body{
     left: 0;
     width: 100%;
     background-color: #000000;
-    height: 100px;	
+    height: 100px;
+    z-index: 1;
 }
 
 .header__wrapper{
@@ -405,10 +406,13 @@ body{
     align-items: flex-end;
     justify-content: space-between;
     vertical-align: center;
+    margin: 0 auto;
 }
 
 .panel-nav{
     display: flex;
+    margin: 0 auto;
+    width: 1920px;
 }
 
 .navbar-nav{
@@ -421,6 +425,16 @@ body{
     margin: 10px 100px 0px 25px;
 }
 
+.header_words{
+    margin-top: 32px;
+    margin-right: 100px;
+}
+
+.header__item1{
+    padding-top: 15px;
+}
+p{margin: 0;}
+
 .active_header__link{
     font-family: 'Oswald';
     color: #FFC700;
@@ -428,25 +442,18 @@ body{
     font-size: 24px;
     line-height: 36px;
     text-decoration: none;
-    margin-right: 100px;
-    margin-left: 120px;
     text-transform: uppercase;
     line-height: 1;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-.header_words1{
-    margin-top: 5px;
-    margin-right: 100px;
-}
-
 .active_header__link:hover{
     color: #ffa000; /* Меняем цвет текста */
     -webkit-text-shadow: 2px 2px 2px #000;
     -moz-text-shadow: 2px 2px 2px #000;
     text-shadow: 2px 2px 2px #000;
   }
+
 
 .active_header__link1{
     font-family: 'Oswald';
