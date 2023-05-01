@@ -383,11 +383,9 @@ body{
     line-height: 1.2;
     font-weight: normal;
     color: #000000;
-    min-width: 1900px;
 }
 
 .wrapper{
-    max-width: 1900px;
     margin: 0 auto;
 }
 
@@ -412,7 +410,7 @@ body{
 .panel-nav{
     display: flex;
     margin: 0 auto;
-    width: 1920px;
+    /* width: 1920px; */
 }
 
 .navbar-nav{
@@ -804,7 +802,7 @@ td{
 }
 
 .table1{
-    width:600px;
+    max-width:600px;
     margin-top: 70px;
     margin-left: 320px;
     border-collapse: collapse;
