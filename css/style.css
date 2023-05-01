@@ -269,7 +269,6 @@ body{
     line-height: 1.2;
     font-weight: normal;
     color: #000000;
-    min-width: 1900px;
 }
 .wrapper{
     max-width: 1280px;
@@ -309,7 +308,7 @@ body{
 .panel-nav{
     display: flex;
     margin: 0 auto;
-    width: 1920px;
+    width: 100%;
 }
 
 .navbar-nav{
@@ -661,7 +660,7 @@ p{margin: 0;}
     font-weight: 700;
     font-size: 30px;
     line-height: 28px;
-    width: 694px;
+    max-width: 694px;
     margin-top: 75px;
     margin-bottom: 40px;
     text-align: center;
@@ -673,7 +672,7 @@ p{margin: 0;}
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    width: 695px;
+    max-width: 695px;
     margin-bottom: 250px;
     text-align: justify;
 }
@@ -869,6 +868,6 @@ p{margin: 0;}
 }
 
 .classic_map2{
-    width: 1800px;
+    width: 100%;
     margin: auto;
 }
