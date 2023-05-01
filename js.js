@@ -1,4 +1,4 @@
-async function a(i) {
+async function site_filling(i) {
     let data = await fetch("main.json");
     let json = await data.json();
 
@@ -112,4 +112,4 @@ async function a(i) {
 
 let all_pages = ["podveska", "to", "far", "dvig", "shinomontazh", "svar", "tormoz", "comrem", "grm"];
 let params = (new URL (document.location)).searchParams;
-a(all_pages.indexOf(params.get("page")));
+site_filling(all_pages.indexOf(params.get("page")));
