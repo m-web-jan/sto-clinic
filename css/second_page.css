@@ -410,7 +410,6 @@ body{
 .panel-nav{
     display: flex;
     margin: 0 auto;
-    /* width: 1920px; */
 }
 
 .navbar-nav{
